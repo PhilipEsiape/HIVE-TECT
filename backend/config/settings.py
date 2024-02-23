@@ -114,10 +114,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # } 
+          'default' : dj_database_url.parse('postgres://hivetech_user:CqVpnWiGjs7m173WFIcU7FZTaMLXoN5m@dpg-cnc3f7ta73kc73ejlorg-a.oregon-postgres.render.com/hivetech') 
 }
 
 
